@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/cardMain">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Loading..."
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:id="@+id/repoName"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Loading..."
+            android:layout_below="@id/repoName"
+
+            android:textStyle="bold"
+            android:id="@+id/repoOwnerListContrib"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Loading..."
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/repoOwnerListContrib"
+            android:id="@+id/repoDescListContrib"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/repoDescListContrib"
+            android:text="List of Contributors"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+     </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recylcerViewListContrib"
+        android:layout_width="match_parent"
+        android:layout_below="@id/cardMain"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>
